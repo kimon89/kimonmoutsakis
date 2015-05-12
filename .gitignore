@@ -3,3 +3,6 @@ nbproject/project.properties
 nbproject/project.xml
 10gif
 10gif.pub
+/vendor
+/node_modules
+.env

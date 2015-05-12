@@ -1,2 +1,0 @@
-# kimonmoutsakis
-personal website
