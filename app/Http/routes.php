@@ -13,6 +13,7 @@
 
 
 Route::get('/', 'HomeController@index');
+Route::post('contact/message', 'ContactController@message');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
