@@ -11,7 +11,7 @@
 			<div class="col-xs-12 col-sm-12"><p>I am Kimon and I am a software engineer based in London,UK</p></div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12"><h4>Want to talk ?</h4></div>
+			<div class="col-xs-12 col-sm-12"><h3>Want to talk ?</h3></div>
 			<div class="col-xs-6 col-sm-6">
 				<form id="contact-form" method="POST" action="/contact/message">
 					<div class="form-group">

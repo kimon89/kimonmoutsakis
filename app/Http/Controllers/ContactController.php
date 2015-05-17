@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Requests\MessageRequest;
+
 class ContactController extends Controller {
 
 	/*
@@ -17,9 +19,14 @@ class ContactController extends Controller {
 	 * Returns a json string with the outcome
 	 * @return Response
 	 */
-	public function message()
+	public function message(MessageRequest $request)
 	{
-		
+        if (Request::has('name'))
+        {
+            //
+        }
+        $data = ['success' => true];
+		return view('json',['data' => $data]);
 	}
 
 }
