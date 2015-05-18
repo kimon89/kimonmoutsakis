@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests\MessageRequest;
+use App\Message;
+use Mail;
 
 class ContactController extends Controller {
 
@@ -21,12 +23,23 @@ class ContactController extends Controller {
 	 */
 	public function message(MessageRequest $request)
 	{
-        if (Request::has('name'))
-        {
-            //
-        }
-        $data = ['success' => true];
-		return view('json',['data' => $data]);
+		//get the data
+		
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $message = $request->input('message');
+		
+		//save the message
+		$message_model = new Message();
+		$message_model->name = $name;
+		$message_model->email = $email;
+		$message_model->message = $message;
+		$res = $message_model->save();
+		
+		//send email
+		mail('moutsakisk@gmail.com', 'kimonmoutsakis.com message', htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
+	
+		return view('json',['data' => ['success' => $res]]);
 	}
 
 }

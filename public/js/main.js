@@ -6,9 +6,13 @@ $(function(){
             url:"/contact/message",
             data:data,
             method:"POST",
-            dataType:"json"
+            dataType:"json",
         }).done(function(data){
-            console.log(data);
-        });
+			if (data.success) {
+				//show thank you message
+			}
+		}).fail(function(jqXHR){
+			console.log(jqXHR.responseText);
+		});
 	});
 });

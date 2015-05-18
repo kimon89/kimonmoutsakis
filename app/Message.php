@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Message extends Model {
 
 
+	public $timestamps = false;
 	/**
 	 * The database table used by the model.
 	 *
