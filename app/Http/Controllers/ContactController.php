@@ -24,7 +24,6 @@ class ContactController extends Controller {
 	public function message(MessageRequest $request)
 	{
 		//get the data
-		
         $name = $request->input('name');
         $email = $request->input('email');
         $message = $request->input('message');
@@ -37,7 +36,12 @@ class ContactController extends Controller {
 		$res = $message_model->save();
 		
 		//send email
-		mail('moutsakisk@gmail.com', 'kimonmoutsakis.com message', htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
+		$message_info = 'From: ' . $email . ' - ' . $name . ' ';
+		$message_body = $message;
+		Mail::send('emails.message', ['message_info' => $message_info,'message_body' => $message_body], function($message) use ($email,$name){
+			$message->from($email, $name . ' - kimonmoutsakis.com');
+			$message->to('moutsakisk@gmail.com', 'Kimon')->subject('New Message!');
+		});
 	
 		return view('json',['data' => ['success' => $res]]);
 	}

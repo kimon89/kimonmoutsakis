@@ -1,0 +1,1 @@
+{{{ $message_info }}} <br> {{{$message_body}}}
