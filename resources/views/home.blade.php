@@ -13,6 +13,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12"><h3>Want to talk ?</h3></div>
 			<div class="col-xs-6 col-sm-6">
+				<div id='thank-you' style="display:none">Thank you!</div>
 				<form id="contact-form" method="POST" action="/contact/message">
 					<div class="form-group">
 					  <label for="exampleInputEmail1">Name</label>
