@@ -1,5 +1,4 @@
 @extends('app')
-
 @section('content')
 	<div class="container">
 		<div class="page-header">
@@ -13,7 +12,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12"><h3>Want to talk ?</h3></div>
 			<div class="col-xs-6 col-sm-6">
-				<div id='thank-you' style="display:none">Thank you!</div>
+				<div class="alert alert-success" id='thank-you' style="display:none">Thank you!</div>
 				<form id="contact-form" method="POST" action="/contact/message">
 					<div class="form-group">
 					  <label for="exampleInputEmail1">Name</label>
@@ -32,8 +31,14 @@
 				</form>
 			</div>
 		  <div class="col-xs-6 col-sm-6">
-
+				<ul class="social">
+					<li><a href="https://uk.linkedin.com/pub/kimon-moutsakis/45/398/471"><img src="{{ asset('/icons/linkedin.png') }}" alt=""></a></li>
+					<li><a href="https://github.com/kimon89"><img src="{{ asset('/icons/github.png') }}" alt=""></a></li>
+					<li><a href="http://stackoverflow.com/users/1248752/kimon-moutsakis"><img src="{{ asset('/icons/stackoverflow.png') }}" alt=""></a></li>
+					<li><a href="http://steamcommunity.com/profiles/76561198027226295/"><img src="{{ asset('/icons/steam.png') }}" alt=""></a></li>
+				</ul>
 		  </div>
 		</div>
 	</div>
+
 @endsection
