@@ -11,11 +11,12 @@ $(function(){
         }).done(function(data){
 			if (data.success) {
 				//show thank you message
-				contactForm.fadeOut(1000);
-				$('#thank-you').fadeIn(1000);
+				contactForm.fadeOut(500,'swing',function(){
+					$('#thank-you').fadeIn(300);
+				});
 			}
 		}).fail(function(jqXHR){
-			console.log(jqXHR.responseText);
+
 		});
 	});
 });
