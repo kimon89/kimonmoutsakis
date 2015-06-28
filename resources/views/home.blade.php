@@ -7,7 +7,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-6 col-sm-6"><h3>Hello, there!</h3></div>
-			<div class="col-xs-12 col-sm-12"><p>I am Kimon and I am a software engineer based in London,UK</br>
+			<div class="col-xs-12 col-sm-12"><p>I am Kimon and I am a software engineer based in London,UK </br>
 				I have almost 3 years of professional experience with a high traffic website with more than 100 million registered users.
 				I have been writting scallable code in PHP and MySQL for an API used by hundreds of online games with thousands of concurent users.
 				Highly experienced in PHP, MySQL and Javascript. With a very solid understanding of OOP and design patterns. I have exposure on the Yii2 and Laravel frameworks and have been using tools such as Git,Sourcetree,Stash,Bamboo,Jira on a daily basis.</p></div>
@@ -35,7 +35,7 @@
 			</div>
 		  <div class="col-xs-6 col-sm-6">
 				<ul class="social">
-					<li><a href="https://uk.linkedin.com/pub/kimon-moutsakis/45/398/471"><img src="{{ asset('/icons/linkedin.png') }}" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/in/kimonmoutsakis"><img src="{{ asset('/icons/linkedin.png') }}" alt="Kimon Moutsakis linkedin"></a></li>
 					<li><a href="https://github.com/kimon89"><img src="{{ asset('/icons/github.png') }}" alt=""></a></li>
 					<li><a href="http://stackoverflow.com/users/1248752/kimon-moutsakis"><img src="{{ asset('/icons/stackoverflow.png') }}" alt=""></a></li>
 				</ul>
@@ -46,5 +46,5 @@
 @endsection
 @section('footer')
 <hr>
-<span>Kimon Moutsakis</span>
+<span></span>
 @endsection
