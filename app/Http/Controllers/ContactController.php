@@ -33,7 +33,7 @@ class ContactController extends Controller {
 		$message_model->name = $name;
 		$message_model->email = $email;
 		$message_model->message = $message;
-		$res = $message_model->save();
+
 		
 		//send email
 		$message_info = 'From: ' . $email . ' - ' . $name . ' ';
