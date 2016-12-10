@@ -33,7 +33,6 @@ class ContactController extends Controller {
 		$message_model->name = $name;
 		$message_model->email = $email;
 		$message_model->message = $message;
-
 		
 		//send email
 		$message_info = 'From: ' . $email . ' - ' . $name . ' ';
@@ -43,7 +42,7 @@ class ContactController extends Controller {
 			$message->to('moutsakisk@gmail.com', 'Kimon')->subject('New Message!');
 		});
 	
-		return view('json',['data' => ['success' => $res]]);
+		return view('json',['data' => ['success' => true]]);
 	}
 
 }
