@@ -1,7 +1,6 @@
 FROM php:7.0-apache
 
 COPY . /var/www/kimonmoutsakis/
-COPY .env.example /var/www/kimonmoutsakis/.env.example
 WORKDIR "/var/www/kimonmoutsakis"
 
 RUN apt-get update && apt-get install -y libmcrypt-dev zlib1g-dev
