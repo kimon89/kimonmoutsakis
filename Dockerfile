@@ -4,6 +4,7 @@ COPY . /var/www/kimonmoutsakis/
 WORKDIR "/var/www/kimonmoutsakis"
 
 RUN apt-get update && apt-get install -y libmcrypt-dev zlib1g-dev
+RUN docker-php-ext-install pdo pdo_mysql
 RUN docker-php-ext-install mcrypt zip
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
