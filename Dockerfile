@@ -19,3 +19,5 @@ RUN a2dissite 000-default.conf
 RUN a2ensite kimonmoutsakis.conf
 RUN a2enmod rewrite
 RUN service apache2 restart
+
+RUN php artisan migrate --env=development
