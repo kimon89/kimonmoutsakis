@@ -28,9 +28,9 @@
 			</div>
 		  <div class="col-xs-6 col-sm-6">
 				<ul class="social">
-					<li><a href="https://www.linkedin.com/in/kimonmoutsakis"><img src="{{ asset('/images/linkedin.png') }}" alt="Kimon Moutsakis linkedin"></a></li>
-					<li><a href="https://github.com/kimon89"><img src="{{ asset('/images/github.png') }}" alt=""></a></li>
-					<li><a href="http://stackoverflow.com/users/1248752/kimon-moutsakis"><img src="{{ asset('/images/stackoverflow.png') }}" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/in/kimonmoutsakis"><img src="{{ asset('/images/linkedin.png') }}"></a></li>
+					<li><a href="https://github.com/kimon89"><img src="{{ asset('/images/github.png') }}"></a></li>
+					<li><a href="http://stackoverflow.com/users/1248752/kimon-moutsakis"><img src="{{ asset('/images/stackoverflow.png') }}"></a></li>
 				</ul>
 		  </div>
 		</div>
